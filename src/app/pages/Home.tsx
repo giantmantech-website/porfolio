@@ -72,20 +72,23 @@ export function Home() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(212,175,55,0.12),transparent)] pointer-events-none" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 text-luxury-text drop-shadow-lg">
-                GIANTMANTECH
-              </h1>
-              <p className="text-xl text-luxury-gold mb-4 font-semibold">
-                Creative Media & Digital Brand Agency
-              </p>
-              <p className="text-lg text-luxury-text/85 mb-8">
-                Delivering world-class content strategy, animation, graphic design, web
-                development, social media management, and AI-driven video production across
-                Nigeria and beyond.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <Link to="/portfolio">
+          <div className="text-center md:text-left">
+          <div className="flex flex-col items-center md:items-start text-center md:text-left">
+  <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 text-luxury-text drop-shadow-lg leading-tight">
+    GIANTMANTECH
+  </h1>
+
+  <p className="text-base sm:text-lg md:text-xl text-luxury-gold mb-3 font-semibold">
+    Creative Media & Digital Brand Agency
+  </p>
+
+  <p className="text-sm sm:text-base md:text-lg text-luxury-text/85 mb-6 max-w-xl mx-auto md:mx-0 leading-relaxed">
+    Delivering world-class content strategy, animation, graphic design, web
+    development, social media management, and AI-driven video production across
+    Nigeria and beyond.
+  </p>
+
+  <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">     <Link to="/portfolio">
                   <Button
                     size="lg"
                     variant="outline"
@@ -102,11 +105,11 @@ export function Home() {
                 </Link>
               </div>
             </div>
-            <div className="relative rounded-2xl overflow-hidden ring-2 ring-luxury-gold/50 shadow-2xl shadow-black/40">
+            <div className="relative mt-8 md:mt-0 rounded-2xl overflow-hidden ring-2 ring-luxury-gold/50 shadow-2xl shadow-black/40 max-w-md mx-auto md:max-w-full">
               <ImageWithFallback
                 src="/images/hero-training.png"
                 alt="GIANTMANTECH training and web development program"
-                className="w-full h-full min-h-[280px] md:min-h-[360px] object-cover object-center"
+                className="w-full h-[260px] sm:h-[300px] md:h-[400px] object-cover object-center"60px] object-cover object-center"
               />
               <div
                 className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-luxury-navy-deep/90 via-luxury-navy/35 to-transparent"
